@@ -1,2 +1,4 @@
-# basketball-scoreboard
+basketball-scoreboard
+
+scrimba js course project 
  
