@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    margin: 25vh 0;
+}
+
+
+#scoreboard {
+    height: fit-content;
+}
+
+#players-sec {
+/*flexbox container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#home-sec, #guest-sec {
+/*layout*/
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+#home-title, #guest-title {
+/*layout*/
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 0.2em;
+
+/*Typography & styles*/
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #eeeeee;
+    opacity: 0.9;
+}
+
+#home-points, #guest-points {
+/*layout*/
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0.2em;
+
+/*Typography & styles*/
+    font-size: 4.5rem;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #F94F6D;
+    background-color: #1b1b3253;
+    opacity: 0.9;
+}
+
+button {
+/*layout*/
+    width: 40px;
+    height: 40px;
+
+/*Typography & styles*/
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #eeeeeeb7;
+    background-color: #8888cea1;
+    font-size: 1rem;
+    border: solid 3px #8888ce6d;
+    border-radius: 15px;
+}
+
+#new-game-sec {
+/*layout*/
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#new-game-btn {
+/*layout*/
+    width: 90px;
+    height: 45px;
+    margin-top: 2em;
+}
+
+
+/*setting up the media queries 🖥💻📱*/
+
+
+@media screen and (min-width: 334px) {
+    #home-title, #guest-title {
+        font-size: 3rem;
+    }
+    #home-points, #guest-points {
+        font-size: 6rem;
+    }
+    button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    #home-title, #guest-title {
+        font-size: 3.5rem;
+        }
+        #home-points, #guest-points {
+            font-size: 7rem;
+    }
+    button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    #home-title, #guest-title {
+        font-size: 4.2rem;
+    }
+
+    #home-points, #guest-points {
+        font-size: 7.5rem;
+}
+button {
+    margin-right: 5px;
+}
+}
