@@ -126,7 +126,8 @@ button {
 }
 
 
-@media screen and (min-width: 600px) {
+
+@media screen and (min-width: 400px) {
     #home-title, #guest-title {
         font-size: 3.5rem;
         }
